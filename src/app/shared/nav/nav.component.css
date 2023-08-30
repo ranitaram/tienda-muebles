@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box; /*Para no modificar el tamaño de un elemento*/
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+/*Es parte del box sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.navegacion {
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: #037bc0;
+    border-top-style: solid;
+    border-color: #e1e1e1;
+    border-width: 1;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #000;
+}

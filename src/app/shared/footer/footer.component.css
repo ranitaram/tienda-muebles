@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box; /*Para no modificar el tamaño de un elemento*/
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+/*Es parte del box sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+nav a {
+    text-transform: uppercase;
+}
+
+.contenedor-footer {
+  display: flex;
+  border-top-style: solid;
+  border-color: #e1e1e1;
+  border-width: 1;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-content: space-evenly;
+  
+}
+
+.navegacion {
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: #037bc0;
+    padding: 0;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3 1fr);
+    font-size: 1rem;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-categorias {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+
+
+p {
+    font-size: 14px;
+    text-align: center;
+}

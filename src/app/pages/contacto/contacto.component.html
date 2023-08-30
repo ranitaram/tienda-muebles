@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <app-header></app-header>
+    <app-nav></app-nav>
+    <main>
+        <h2 class="text-center">Contacto</h2>
+
+        <form class="formulario" action="url">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+
+                    <label for="nombre">Nombre: </label>
+                    <input class="input" id="nombre" type="text" placeholder="Nombre" required>
+                </div>
+                
+                <div class="campo">
+
+                    <label for="asunto">Asunto: </label>
+                    <input type="text" id="asunto" placeholder="Asunto">
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Correo">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Tu numero de teléfono">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="input" name="" placeholder="Escribe tu mensaje" id="mensaje" cols="90" rows="10"></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select name="" id="pais">
+                        <option disabled>--- Seleccione ----</option>
+                        <option value="mexico">México</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos Extras</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input type="radio" id="cliente" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input type="radio" id="proveedor" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="categorias">Categoría de interés</label>
+                    <input type="text" list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina"></option>
+                        <option value="Exterior"></option>
+                        <option value="Recamaras"></option>
+                        <option value="Salas"></option>
+                        <option value="Interior"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input class="btn" type="submit" value="enviar formulario">
+        </form>
+    </main>
+    <app-footer></app-footer>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box; /*Para no modificar el tamaño de un elemento*/
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+/*Es parte del box sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img{
+    max-width: 100%;
+    /* display: block; */
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+.text-center {
+    text-align: center;
+ }
+ 
+ .contenedor-blog {
+    width: 60rem;
+     margin: 0 auto;
+
+ }
+ 
+ .entrada {
+    width: 600px;
+    margin: 0 auto;
+ }
+ 
+ .entrada-meta {
+     display: flex;
+     justify-content: space-between;
+    
+ }
+ 
+ .entrada-meta p {
+    font-weight: bold;
+ }
+ 
+ span {
+     color: #1d6995;
+ }
+ 
+ 
+ 
+ .btn  {
+     background-color: #8cbc00;
+     display: block; /*Toma todo el ancho que hay */
+     font-weight:700;
+     text-transform: uppercase;
+     padding: 0.5rem;
+     transition: background-color .3s ease-out;
+     text-decoration: none;
+     color: #fff;
+     text-align: center;
+     max-width: 20rem;
+     
+ }
+ 
+ .btn:hover {
+     background-color: #769c02;
+     display: block; /*Toma todo el ancho que hay */
+     font-weight:900;
+     padding: .5rem;
+ }

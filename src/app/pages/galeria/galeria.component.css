@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box; /*Para no modificar el tamaño de un elemento*/
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+/*Es parte del box sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+img{
+    max-width: 100%;
+    /* display: block; */
+}
+
+p {
+    font-size: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.conteiner {
+    max-width: 150rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.galeria {
+    list-style: none; /*para remover la viñeta */
+    padding: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+
+}
+
+.galeria img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+}

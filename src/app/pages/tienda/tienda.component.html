@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <router-outlet></router-outlet>
+</head>
+<body>
+  <app-header></app-header>
+  <app-nav></app-nav>
+
+  <div class="hero" [style.backgroundImage]="backgroundImageUrl">
+
+  </div>
+  
+  <section class="contenedor categorias">
+    <h2>Categorías de <span>Productos</span> </h2>
+
+    <div class="listado-categorias">
+        <div class="categoria">
+            <img src="assets/img/categoria1.jpg" alt="Categoría">
+            <a href="#">Oficina</a>
+        </div>
+        <div class="categoria">
+            <img src="assets/img/categoria2.jpg" alt="Categoría">
+            <a href="#">Hogar</a>
+        </div>
+        <div class="categoria">
+            <img src="assets/img/categoria3.jpg" alt="Categoría">
+            <a href="#">Cocina</a>
+        </div>
+    </div>
+
+    
+  </section>
+
+  <section class="sobre-nosotros" [style.backgroundImageGradientUrl]="backgroundImageGradientUrl">
+    <div class="contenedor-nosotros-grid">
+        <div class="texto-nosotros">
+            
+            <h2>Sobre Nostros</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam aspernatur nemo quis nam, harum enim. Dolor non minus reiciendis nisi quos assumenda eum consequatur accusamus consequuntur eaque, unde possimus corporis.</p>
+        </div>
+    </div>
+  </section>
+
+  <app-listado-productos></app-listado-productos>
+
+
+  <app-footer></app-footer>
+    
+</body>
+</html>
+<router-outlet></router-outlet>

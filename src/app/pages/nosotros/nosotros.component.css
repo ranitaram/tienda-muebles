@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box; /*Para no modificar el tamaño de un elemento*/
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+/*Es parte del box sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 2rem;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

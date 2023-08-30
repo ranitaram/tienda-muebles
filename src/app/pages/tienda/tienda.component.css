@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box; /*Para no modificar el tamaño de un elemento*/
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+/*Es parte del box sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* box model */
+
+
+.contenedor {
+  
+    margin: auto;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+.categoria a:hover {
+    background-color: #1d6995;
+    color: #FFF;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    font-size: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    /* display: block; */
+}
+
+.hero {
+   
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+  
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #1d6995 50%, #1d6995 100%),
+    url("/assets/img/nosotros.jpg");
+    padding: 2rem 0;
+    /* background-size: 100%; */
+    background-position: left center;
+}
+
+.contenedor-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    color: #FFF;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.texto-nosotros {
+    grid-column: 2 / 3;
+}
+/* Listado de productos */

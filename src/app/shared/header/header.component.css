@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px*/
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+
+
+
+
+.titulo {
+    font-size: 2rem;
+    color: #000;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.titulo span {
+    color: #1d6995;
+}
